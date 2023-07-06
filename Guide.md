@@ -42,12 +42,12 @@ Cela vous apportera l'assurance de trouver facilement des ressources pour vous d
 
 <h3>1. Dans quel ordre produire les documents ?</h3>
 
-1 - Arboressence du site
-2 - Wireframe <i>( nécessite l'arboressence du site * )</i>
-3 - Users Stories <i>( nécessite l'arboressence du site * )</i>
-4 - MCD -> MLD -> MPD -> Dictionnaire de donnée <i>( nécessite les users stories * )</i>
-5 - Route front <i>( nécessite l'arboressence * )</i>
-6 - Route back <i>( nécessite le dictionnaire de donnée / MPD * )</i>
+- Arboressence du site
+- Wireframe <i>( nécessite l'arboressence du site * )</i>
+- Users Stories <i>( nécessite l'arboressence du site * )</i>
+- MCD -> MLD -> MPD -> Dictionnaire de donnée <i>( nécessite les users stories * )</i>
+- Route front <i>( nécessite l'arboressence * )</i>
+- Route back <i>( nécessite le dictionnaire de donnée / MPD * )</i>
 
 
 
@@ -135,6 +135,44 @@ body
 <h3>5. Comment faire les users stories ?</h3>
 
 <h3>6. Bien penser l'arborescence de votre site</h3>
+
+<h3>(bonus) Pense bête git</h3>
+
+<p>
+1. Initialisation d'un nouveau dépôt :
+   - `git init` : Crée un nouveau dépôt Git dans le répertoire actuel.
+
+2. Configuration :
+   - `git config --global user.name "Votre Nom"` : Configure votre nom d'utilisateur Git.
+   - `git config --global user.email "votre-email@example.com"` : Configure votre adresse e-mail Git.
+
+3. Commandes de base :
+   - `git clone <URL>` : Clone un dépôt distant existant sur votre machine.
+   - `git add <fichier>` : Ajoute un fichier à l'index pour le suivi des modifications.
+   - `git commit -m "Message de commit"` : Crée un nouveau commit avec les fichiers ajoutés.
+   - `git push origin <branche>` : Pousse les commits locaux vers une branche distante.
+   - `git pull origin <branche>` : Récupère les dernières modifications d'une branche distante.
+
+4. Branches :
+   - `git branch` : Affiche la liste des branches locales.
+   - `git branch <nom_branche>` : Crée une nouvelle branche.
+   - `git checkout <branche>` : Bascule vers une branche spécifique.
+   - `git merge <branche>` : Fusionne une branche avec la branche actuelle.
+
+5. Historique et annulation :
+   - `git log` : Affiche l'historique des commits.
+   - `git reset <commit>` : Annule les commits en les supprimant de l'historique.
+   - `git revert <commit>` : Annule un commit en créant un nouveau commit annulant ses modifications.
+   - `git stash` : Met de côté les modifications non validées.
+
+6. Collaborer avec d'autres :
+   - `git remote add origin <URL>` : Ajoute un référentiel distant.
+   - `git fetch` : Récupère les modifications depuis le référentiel distant.
+   - `git merge origin/<branche>` : Fusionne les modifications distantes dans votre branche locale.
+   - `git pull --rebase origin <branche>` : Récupère les modifications distantes et les incorpore dans votre branche locale.
+
+N'oubliez pas de consulter la documentation officielle de Git (https://git-scm.com/doc) pour plus d'informations sur les commandes et leur utilisation spécifique.</p>
+
 
 <h2 style="color: red;"> -- Sprint 1 - On code ! </h2>
 
